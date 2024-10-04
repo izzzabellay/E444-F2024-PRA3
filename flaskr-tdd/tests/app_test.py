@@ -82,3 +82,11 @@ def test_delete_message(client):
     rv = client.get('/delete/1')
     data = json.loads(rv.data)
     assert data["status"] == 1
+    
+
+# def test_search_message(client):
+#     """Ensure that user can search messages"""
+#     rv = client.get('/search/'
+#     data = data=dict(title="<Hello>", text="<strong>HTML</strong> allowed here")
+#     )
+#     assert data["status"] == 1
